@@ -1,5 +1,5 @@
 # Citation-Application
-//====================== run server in visuel studio or terminal ==================================
+//====================== run server in visuel studio or terminal ===================================
 > nodemon app.js
 
 //===================== create data base in mysql =============================================================
