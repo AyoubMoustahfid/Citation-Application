@@ -71,11 +71,11 @@ app.get('/edit/:userId',(req, res) => {
     });
 });
 
-app.post('/Update',(req, res) => {
+app.post('/update',(req, res) => {
   
     let userId = req.body.id
 
-    let sql = "update citation SET name='"+req.body.name+"', description='"+req.body.description+"' where id ="+userId;
+    let sql = "Update citation SET name='"+req.body.name+"', description='"+req.body.description+"' where id ="+userId;
     let query = conn.query(sql,(err, results) => {
       if(err) throw err;
       res.redirect('/');
