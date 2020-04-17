@@ -1,15 +1,35 @@
 # Citation-Application
-//====================== run server in visuel studio or terminal ===================================
+run server in visuel studio or terminal
 > nodemon app.js
 
-//===================== create data base in mysql ==================================================
-create database in mysql 
-brief --> citation
+create data base in mysql
+> Name database : brief
 
-//==================== table database ==============================================================
-id
-name
-description
+> Name table : citation
 
-//================== run server ====================================================================
-localhost:300
+Element in Table for my database
+> id            : INT(11)
+
+> name          : VARCHAR(255)
+
+> description   : TEXT
+
+> img           :  VARCHAR(255)
+
+> category      : VARCHAR(255)
+
+run server 
+> localhost:300
+
+Package File Node Module
+> ejs
+
+> express
+
+> body-parser
+
+> mysql
+
+> path
+
+> nodemon
