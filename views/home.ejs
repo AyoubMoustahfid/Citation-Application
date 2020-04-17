@@ -22,8 +22,10 @@
             <% for(author of authors){%>
             <div>
               <div class="box box1">
+                <img class="image" src="<%= author.img%>">
                 <p><%= author.description %></p>
                 <h2><%= author.name %></h2>
+                <h6><%= author.category %></h6>
                 <div class="bg"></div>
               </div>
               <div class="button">

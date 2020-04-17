@@ -8,6 +8,7 @@ const app = express();
 app.use(bodyParser.urlencoded({extended : false}));
 app.use(express.static(path.join(__dirname, "assets")));
 app.use(express.static(path.join(__dirname,)));
+app.use(express.static(path.join(__dirname, "image")))
 
 
 
@@ -50,7 +51,9 @@ app.get('/add',(req, res) => {
 app.post('/save',(req, res) => { 
     const data = {
         name: req.body.name, 
-        description: req.body.description
+        description: req.body.description,
+        img : req.body.img,
+        category : req.body.category
     };
     const sql = "INSERT INTO citation SET ?";
     const query = conn.query(sql, data,(err, results) => {
@@ -75,7 +78,7 @@ app.post('/update',(req, res) => {
   
     let userId = req.body.id
 
-    let sql = "Update citation SET name='"+req.body.name+"', description='"+req.body.description+"' where id ="+userId;
+    let sql = "Update citation SET name='"+req.body.name+"', description='"+req.body.description+"', img='"+req.body.img+"', category='"+req.body.category+"' where id ="+userId;
     let query = conn.query(sql,(err, results) => {
       if(err) throw err;
       res.redirect('/');
@@ -94,6 +97,6 @@ app.get('/delete/:userId',(req, res) => {
 });
 
 //  Listing Server 
-app.listen(300, () => {
+app.listen(3000, () => {
     console.log('server is rinning')
 });

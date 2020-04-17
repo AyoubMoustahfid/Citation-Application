@@ -20,7 +20,7 @@ body{
   position: relative;
   margin-top: 30px;
   width: 360px;
-  height: 400px;
+  height: 422px;
   grid-row-end: 400px;
    background: #ccc;
    overflow: hidden;
@@ -55,6 +55,18 @@ body{
 }
 
 .quote .box:hover h2{
+    color: #fff;
+}
+.quote .box h6{
+    position: absolute;
+    bottom: 7px;
+    right: 30px;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.quote .box:hover h6{
     color: #fff;
 }
 .bg{
@@ -131,7 +143,13 @@ body{
     background: linear-gradient(#03A9F4, #E91E63);
 }
 
-
+.image{
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-left: 100px;
+}
 /* Page AddPage & editPage Css */
 *{
     margin: 0;
@@ -158,6 +176,7 @@ body{
     text-align: center;
     margin-bottom: 10px;
 }
+
 
 .container .row100{
     position: relative;
