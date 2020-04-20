@@ -19,7 +19,7 @@ Element in Table for my database
 > category      : VARCHAR(255)
 
 run server 
-> localhost:300
+> localhost:3000
 
 Package File Node Module
 > ejs
